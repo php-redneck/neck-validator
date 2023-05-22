@@ -2,7 +2,7 @@
   "name": "neck-validator",
   "version": "1.0.0",
   "description": "Easy to use TypeScript validator",
-  "main": "index.js",
+  "main": "./src/index.ts",
   "type": "commonjs",
   "scripts": {
     "start:dev": "npx nodemon",
@@ -14,11 +14,15 @@
     "type": "git",
     "url": "git+https://github.com/php-redneck/neck-validator"
   },
-  "keywords": ["validator", "typescript", "nodejs"],
+  "keywords": [
+    "validator",
+    "typescript",
+    "nodejs"
+  ],
   "author": "digital_goose",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@types/node": "^18.16.14",
     "nodemon": "^2.0.22",
     "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
