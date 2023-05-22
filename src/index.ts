@@ -3,7 +3,7 @@ import { Rule } from "./rules/rule";
 import EnLang from './lang/en'
 import { format } from "util";
 
-export class Validator {
+class Validator {
 
     static readonly VALIDATOR_ARRAY_DELIMITER: string = '*';
 
@@ -76,3 +76,5 @@ export class Validator {
     }
 
 }
+
+export { Rule, Validator };

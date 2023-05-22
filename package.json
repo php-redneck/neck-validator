@@ -1,6 +1,6 @@
 {
   "name": "neck-validator",
-  "version": "2.1.0",
+  "version": "1.0.1",
   "description": "Easy to use TypeScript validator",
   "main": "./src/index.ts",
   "type": "commonjs",
