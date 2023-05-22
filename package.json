@@ -1,0 +1,23 @@
+{
+  "name": "neck-validator",
+  "version": "1.0.0",
+  "description": "Easy to use TypeScript validator",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["validator", "typescript", "nodejs"],
+  "author": "digital_goose",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "rimraf": "^4.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}
