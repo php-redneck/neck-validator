@@ -10,6 +10,10 @@
     "build": "rimraf ./build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/php-redneck/neck-validator"
+  },
   "keywords": ["validator", "typescript", "nodejs"],
   "author": "digital_goose",
   "license": "MIT",
@@ -19,5 +23,9 @@
     "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/php-redneck/issues"
+  },
+  "homepage": "https://github.com/php-redneck#readme"
 }
