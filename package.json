@@ -1,6 +1,6 @@
 {
   "name": "neck-validator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Easy to use TypeScript validator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,6 +11,15 @@
   },
   "author": "digital_goose",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/php-redneck/neck-validator"
+  },
+  "keywords": [
+    "validator",
+    "typescript",
+    "nodejs"
+  ],
   "dependencies": {
     "@types/node": "^18.16.14",
     "nodemon": "^2.0.22",
@@ -19,5 +28,9 @@
   },
   "devDependencies": {
     "typescript": "^5.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/php-redneck/issues"
+  },
+  "homepage": "https://github.com/php-redneck#readme"
 }
