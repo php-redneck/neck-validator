@@ -1,3 +1,4 @@
+import { Enums } from "./enums.rule";
 import { IsRequired } from "./required.rule";
 import { Rule } from "./rule";
 
@@ -8,7 +9,8 @@ export class Rules {
     static readonly RULE_ARGUMENT_DELIMITER: string = ',';
 
     static readonly RULES: object = {
-        required: IsRequired
+        required: IsRequired,
+        enums: Enums
     };
 
     static decode(rules: Array<String|Rule>): Array<{
