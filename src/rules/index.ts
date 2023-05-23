@@ -1,3 +1,4 @@
+import { IsArray } from "./array.rule";
 import { Enums } from "./enums.rule";
 import { IsRequired } from "./required.rule";
 import { Rule } from "./rule";
@@ -10,7 +11,8 @@ export class Rules {
 
     static readonly RULES: object = {
         required: IsRequired,
-        enums: Enums
+        enums: Enums,
+        array: IsArray
     };
 
     static decode(rules: Array<String|Rule>): Array<{
