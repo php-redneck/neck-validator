@@ -1,35 +1,23 @@
 {
   "name": "neck-validator",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Easy to use TypeScript validator",
-  "main": "./src/index.ts",
-  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start:dev": "npx nodemon",
-    "start": "npm run build && node build/index.js",
-    "build": "rimraf ./build && tsc",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/php-redneck/neck-validator"
-  },
-  "keywords": [
-    "validator",
-    "typescript",
-    "nodejs"
-  ],
   "author": "digital_goose",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@types/node": "^18.16.14",
     "nodemon": "^2.0.22",
     "rimraf": "^4.4.1",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
     "typescript": "^5.0.3"
-  },
-  "bugs": {
-    "url": "https://github.com/php-redneck/issues"
-  },
-  "homepage": "https://github.com/php-redneck#readme"
+  }
 }
