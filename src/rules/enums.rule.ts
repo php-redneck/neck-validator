@@ -12,7 +12,7 @@ export class Enums extends Rule {
     }
 
     rule(value: any): boolean {
-        return this.enums.includes(value.toString());
+        return this.enums.includes(value?.toString());
     }
 
 }

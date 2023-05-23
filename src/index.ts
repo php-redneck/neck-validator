@@ -37,9 +37,14 @@ class Validator {
             return;
         }
 
-        (isArrayDelimiter) ? path = [] : data = (!!current) ? data[current] : data;
-
         fullPathHistory.push(current);
+
+        if (isArrayDelimiter) {
+            fullPathHistory = fullPathHistory.concat(path);
+            path = [];
+        } else {
+            data = (!!current) ? data[current] : data
+        }
 
         (path.length > 0) 
             ? this.validate([...path], rules, data, fullPathHistory) 
