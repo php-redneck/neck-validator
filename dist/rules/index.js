@@ -12,8 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Rules = void 0;
 var array_rule_1 = require("./array.rule");
 var enums_rule_1 = require("./enums.rule");
+var number_rule_1 = require("./number.rule");
 var required_rule_1 = require("./required.rule");
 var rule_1 = require("./rule");
+var string_rule_1 = require("./string.rule");
 var Rules = exports.Rules = /** @class */ (function () {
     function Rules() {
     }
@@ -46,7 +48,9 @@ var Rules = exports.Rules = /** @class */ (function () {
     Rules.RULES = {
         required: required_rule_1.IsRequired,
         enums: enums_rule_1.Enums,
-        array: array_rule_1.IsArray
+        array: array_rule_1.IsArray,
+        string: string_rule_1.IsString,
+        number: number_rule_1.IsNumber
     };
     return Rules;
 }());
