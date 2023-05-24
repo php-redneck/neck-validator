@@ -3,5 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     required: 'The :attribute field is required.',
     array: 'The :attribute field is not array.',
-    enums: 'The :attribute field not in exist enums.'
+    enums: 'The :attribute field not in exist enums.',
+    number: 'The :attribute field is not a number.',
+    string: 'The :attribute field is not a string.',
 };
