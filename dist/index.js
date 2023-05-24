@@ -44,7 +44,7 @@ var Validator = /** @class */ (function () {
             path = [];
         }
         else {
-            data = (!!current) ? data[current] : data;
+            data = (!!current && !!data) ? data[current] : data;
         }
         (path.length > 0)
             ? this.validate(__spreadArray([], path, true), rules, data, fullPathHistory)

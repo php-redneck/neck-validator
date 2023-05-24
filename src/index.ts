@@ -43,7 +43,7 @@ class Validator {
             fullPathHistory = fullPathHistory.concat(path);
             path = [];
         } else {
-            data = (!!current) ? data[current] : data
+            data = (!!current && !!data) ? data[current] : data
         }
 
         (path.length > 0) 
