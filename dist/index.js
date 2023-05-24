@@ -38,8 +38,14 @@ var Validator = /** @class */ (function () {
                 this.validate(__spreadArray([], path, true), rules, data[i], __spreadArray(__spreadArray([], fullPathHistory, true), [i], false));
             return;
         }
-        (isArrayDelimiter) ? path = [] : data = (!!current) ? data[current] : data;
         fullPathHistory.push(current);
+        if (isArrayDelimiter) {
+            fullPathHistory = fullPathHistory.concat(path);
+            path = [];
+        }
+        else {
+            data = (!!current) ? data[current] : data;
+        }
         (path.length > 0)
             ? this.validate(__spreadArray([], path, true), rules, data, fullPathHistory)
             : this.execRules(fullPathHistory.join('.'), data, rules);

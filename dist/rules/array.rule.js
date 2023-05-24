@@ -15,18 +15,18 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.IsRequired = void 0;
+exports.IsArray = void 0;
 var rule_1 = require("./rule");
-var IsRequired = /** @class */ (function (_super) {
-    __extends(IsRequired, _super);
-    function IsRequired() {
+var IsArray = /** @class */ (function (_super) {
+    __extends(IsArray, _super);
+    function IsArray() {
         var _this = _super.call(this) || this;
-        _this.name = 'required';
+        _this.name = 'array';
         return _this;
     }
-    IsRequired.prototype.rule = function (value) {
-        return value !== undefined;
+    IsArray.prototype.rule = function (value) {
+        return typeof value === 'object';
     };
-    return IsRequired;
+    return IsArray;
 }(rule_1.Rule));
-exports.IsRequired = IsRequired;
+exports.IsArray = IsArray;

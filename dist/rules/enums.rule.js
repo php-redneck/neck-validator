@@ -15,18 +15,23 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.IsRequired = void 0;
+exports.Enums = void 0;
 var rule_1 = require("./rule");
-var IsRequired = /** @class */ (function (_super) {
-    __extends(IsRequired, _super);
-    function IsRequired() {
+var Enums = /** @class */ (function (_super) {
+    __extends(Enums, _super);
+    function Enums() {
+        var enums = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            enums[_i] = arguments[_i];
+        }
         var _this = _super.call(this) || this;
-        _this.name = 'required';
+        _this.name = 'enums';
+        _this.enums = enums;
         return _this;
     }
-    IsRequired.prototype.rule = function (value) {
-        return value !== undefined;
+    Enums.prototype.rule = function (value) {
+        return this.enums.includes(value === null || value === void 0 ? void 0 : value.toString());
     };
-    return IsRequired;
+    return Enums;
 }(rule_1.Rule));
-exports.IsRequired = IsRequired;
+exports.Enums = Enums;

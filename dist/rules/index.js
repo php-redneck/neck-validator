@@ -10,6 +10,8 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Rules = void 0;
+var array_rule_1 = require("./array.rule");
+var enums_rule_1 = require("./enums.rule");
 var required_rule_1 = require("./required.rule");
 var rule_1 = require("./rule");
 var Rules = exports.Rules = /** @class */ (function () {
@@ -42,7 +44,9 @@ var Rules = exports.Rules = /** @class */ (function () {
     Rules.RULE_DELIMITER = ':';
     Rules.RULE_ARGUMENT_DELIMITER = ',';
     Rules.RULES = {
-        required: required_rule_1.IsRequired
+        required: required_rule_1.IsRequired,
+        enums: enums_rule_1.Enums,
+        array: array_rule_1.IsArray
     };
     return Rules;
 }());
